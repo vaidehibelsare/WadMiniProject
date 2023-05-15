@@ -5,7 +5,7 @@ body {
   position: relative;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
- background-color: #ece5e5;
+  background-color: white;
   
   /* overflow: hidden; */
 }
@@ -24,8 +24,8 @@ body {
 }
 
 .btn:hover {
-  background-color: #4caf50; /* Green */
-  color: white;
+  /* background-color:green; */
+  color: rgb(255, 255, 255);
 }
 ul {
   list-style: none;
@@ -35,7 +35,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: rgb(96, 94, 240);
+  color: rgb(20, 18, 21);
 }
 
 
@@ -43,7 +43,7 @@ h4 {
   opacity: 8;
 }
 a {
-  color: rgb(118, 115, 246);
+  color: rgb(14, 14, 15);
   text-decoration: none;
 }
 p {
@@ -90,13 +90,16 @@ p {
   font-size: 20px;
   line-height: 1.9;
 }
+
 li a:hover {
-  background-color: #434443;
+  border-radius: 7px;
+  background-color:black;
+  color:rgb(189, 21, 21);
 }
 
 .navbar-default {
-  background-color: #000000;
-  border-color: #e7e7e7;
+  background-color: white;
+  border-color: white;
   color: #fff;
   height: 60px;
   position: fixed;
@@ -112,16 +115,23 @@ li a:hover {
   font-weight: bold;
   letter-spacing: 2px;
 }
-.navbar-dark .nav-link {
-  font-weight: bold;
+.navbar-light .nav-link {
+  font-size: 18px;
 }
 .navbar-nav .nav-item {
   color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  color: white;
+  font-weight: 800;
   width: 100px;
+}
+.dropdown-menu {
+  background-color: #ffffff;
+}
+.dropdown-menu a:hover {
+  background-color:#dc3545;
 }
 .content-table {
   border-collapse: collapse;

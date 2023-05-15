@@ -11,13 +11,13 @@
 </div>
 <div
   class="container"
-  style=" position:relative;
+  style=" position:relative;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(225, 224, 224);
 border-radius: 15px;
 background-color: #f2f2f2;
-
 padding: 60px 0 30px 0;
 width: 40%;
-
+margin-top: 100px;
 "
 
 >
@@ -27,23 +27,24 @@ width: 40%;
         <form action="/student/register" method="POST" style="margin:20px ;">
           <div class="row">
             <div class="col">
-              <h2 style="    text-align: center;">
-                Register
+              <h2 style="    text-align: center; font-size: 30px;">
+                Registration
               </h2>
               <div class="form-group form-inline">
                 <label for="name" style="width: 200px;
                 display: inline-block;
                 text-align: right;
-                ">Name</label>
+                ">Name &ensp;</label>
                 <input
                   class="form-control"
                   type="text"
                   id="name"
                   placeholder="name"
-                  name="name"
+                  name="name" 
                   style="float: left;;
-                  text-align: left;
+                  text-align: left; 
                   "
+                  required
                 />
               </div>
               <!-- type -->
@@ -51,7 +52,7 @@ width: 40%;
               display: inline-block;
               text-align: right;
               ">
-                <input type="radio" id="r1" name="type" value="student" />
+                <input type="radio" id="r1" name="type" value="student"  />
                 Student
                 <input type="radio" id="r2" name="type" value="hod" />
                 HOD
@@ -64,13 +65,14 @@ width: 40%;
                   <label for="username" style="width: 200px;
                   display: inline-block;
                   text-align: right;
-                  ">Username</label>
+                  ">Username &ensp; </label>
                 <input
                   class="form-control"
                   type="text"
                   id="username"
                   placeholder="username"
                   name="username"
+                  required
                 />
               </div>
               <!-- password -->
@@ -78,13 +80,14 @@ width: 40%;
                   <label for="password"style="width: 200px;
                   display: inline-block;
                   text-align: right;
-                  ">Password</label>
+                  ">Password &ensp; </label>
                 <input
                   class="form-control"
                   type="password"
                   name="password"
                   id="password"
                   placeholder="password"
+                  required
                 />
               </div>
               <!-- confirm password -->
@@ -92,13 +95,14 @@ width: 40%;
                   <label for="cpassword"style="width: 200px;
                   display: inline-block;
                   text-align: right;
-                  ">Confirm Password</label>
+                  ">Confirm Password &ensp; </label>
                 <input
                   class="form-control"
                   type="password"
                   id="cpassword"
                   name="password2"
                   placeholder="Confirm password"
+                  required
                 />
               </div>
               <!-- Department -->
@@ -106,7 +110,7 @@ width: 40%;
                   <label for="department"style="width: 200px;
                   display: inline-block;
                   text-align: right;
-                  ">Department</label>
+                  ">Department &ensp; </label>
                 <!-- <label for="department">Department</label> -->
                 <input
                   class="form-control"
@@ -115,6 +119,7 @@ width: 40%;
                   placeholder="Department"
                   id="department"
                   name="department"
+                  required
                 />
               </div>
               <!-- hostel -->
@@ -122,7 +127,7 @@ width: 40%;
                   <label for="hostel"style="width: 200px;
                   display: inline-block;
                   text-align: right;
-                  ">Hostel</label>
+                  ">Hostel &ensp; </label>
                 <!-- <label for="hostel">Hostel</label> -->
                 <input
                   class="form-control"
@@ -137,7 +142,7 @@ width: 40%;
                   <label for="img"style="width: 200px;
                   display: inline-block;
                   text-align: right;
-                  ">Image Url</label>
+                  ">User profile Image &ensp; </label>
                 <input
                   class="form-control"
                   type="text"
@@ -151,7 +156,7 @@ width: 40%;
                 <button
                   type="submit"
                   class="btn btn-lg btn-primary btn-default btn-block"
-                  style=" color:#fff;"
+                  style=" color:#fff; "
                 >
                   Submit
                 </button>
@@ -161,7 +166,7 @@ width: 40%;
           <!-- name -->
         </form>
 
-        <a href="/">Back</a>
+        <a style="margin-left: 20px;" href="/">Back</a>
       </div>
     </div>
   </div>

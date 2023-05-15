@@ -24,10 +24,10 @@
   <body data-spy="scroll" data-target="#mainNavbar" data-offset="10">
     <nav
       id="mainNavbar"
-      class="navbar navbar-default navbar-expand-lg navbar-dark bg-success navbar-fixed-top"
+      class="navbar navbar-default navbar-expand-lg navbar-light bg-danger navbar-fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand" href="/">L.M.S</a>
+        <a class="navbar-brand" style="color:white;" href="/">L.M.S</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,24 +52,25 @@
             <!-- <li><a href="#">Signed in as <%= user.type%></a></li> -->
 
             <li class="nav-item">
-              <a class="nav-link " style="margin-left: 284px" href="/logout"
+              <a class="nav-link " style="margin-left: 284px; color:white;" href="/logout"
                 >Logout
               </a>
             </li>
 
             <%}%> <% if(!user){%>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact </a>
+            <li class="nav-item" >
+              <a class="nav-link"  style="color: white;" href="#aboutUs">About Us </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutUs">About Us </a>
+              <a class="nav-link"  style="color: white;" href="#contact">Contact </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/register">Register </a>
+              <a class="nav-link"  style="color: white;" href="/register">Register </a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
+                style="color:white;"
                 href="#"
                 id="navbarDropdown"
                 role="button"

@@ -1,17 +1,17 @@
 <% include ./partial/header %>
 <div class="container"
-style=" position: relative;
+style=" position: relative;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-radius: 5px;
-background-color: #f2f2f2;
+background-color: rgb(225, 224, 224);
 padding: 20px 0 30px 0;
 width: 40%;
-
+margin-top: 100px;
 ">
   
       <form action="/warden/<%=warden._id%>?_method=PUT" method="POST">
         <div class="row">
           <div class="col">
-            <h1 style="text-align:center;">Edit Profile<%= warden.name%></h1>
+            <h2 style="text-align:center;">Edit Profile</h2>
             <div class="form-group form-inline">
               <label
                 for="name"
@@ -36,7 +36,7 @@ width: 40%;
                     display: inline-block;
                     text-align: right;
                     "
-                >Username</label
+                >Username &ensp;</label
               >
               <input
                 class="form-control"
@@ -53,7 +53,7 @@ width: 40%;
                     display: inline-block;
                     text-align: right;
                     "
-                >Hostel</label
+                >Hostel &ensp;</label
               >
               <input
                 class="form-control"
@@ -71,7 +71,7 @@ width: 40%;
                     display: inline-block;
                     text-align: right;
                     "
-                >Image-url</label
+                >Profile image &ensp;</label
               >
               <input
                 class="form-control"
@@ -82,7 +82,7 @@ width: 40%;
               />
             </div>
             <div class="form-group">
-              <button class="btn btn-lg btn-primary btn-block">Submit</button>
+              <button class="btn btn-lg btn-primary btn-default btn-block">Submit</button>
             </div>
           </div>
         </div>
